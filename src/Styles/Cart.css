@@ -1,0 +1,225 @@
+/* cart.css - Styles for the shopping cart page */
+
+.cart-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+display: flex;
+flex-direction: column;
+
+}
+
+.cart-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+  }
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cart-item-details h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+  }
+
+.cart-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+.cart-item-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+.cart-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.cart-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item button:hover {
+    background-color: #c82333;
+}
+
+.cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: #333;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controls button {
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .quantity-controls input {
+    width: 30px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .delete-btn {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .total-amount {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+    .empty-cart {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin-top: 50px;
+    }
+
+    .empty-cart a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .empty-cart a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+        .cart-item {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .cart-item-image {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        .cart-item-details {
+          margin-left: 0;
+        }
+        .cart-item h4 {
+          font-size: 16px;
+        }
+
+        .cart-item-details h4 {
+          font-size: 14px;
+        }
+        .cart-item-details p {
+          font-size: 12px;
+        }
+        .cart-item p {
+          font-size: 14px;
+        }
+        .cart-item button {
+          padding: 5px 10px;
+          font-size: 14px;
+        }
+        .cart-total {
+          font-size: 18px;
+        }
+        .checkout-btn {
+          font-size: 16px;
+          padding: 10px;
+        }
+        .quantity-controls button {
+          width: 20px;
+          height: 20px;
+        }
+
+        .quantity-controls input {
+          width: 25px;
+          font-size: 14px;
+        }
+        .delete-btn {
+          padding: 3px 8px;
+          margin-left: 5px;
+        }
+        .total-amount {
+          font-size: 16px;
+        }
+        .cart-item-info {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .cart-item-actions {
+          width: 100%;
+          justify-content: space-between;
+          margin-top: 10px;
+        }
+      }

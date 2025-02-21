@@ -1,0 +1,148 @@
+/* Navbar container */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    padding: 15px 30px;
+    background: rgb(41, 59, 75);
+    /* backdrop-filter: blur(100px); */
+    /* background: #242424; */
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Styling */
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .logo a:hover {
+    color: #f39c12;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover & Active Effects */
+  .nav-item:hover,
+  .nav-item:focus {
+    background: #f39c12;
+    color: white;
+  }
+  
+  /* Cart Container */
+  .cart-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+  
+  /* Cart Item Count Badge */
+  .cart-count {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 🔹 Responsive Design */
+  @media (max-width: 1024px) {
+    .nav-links {
+      gap: 15px;
+    }
+    
+    .nav-item {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .logo a {
+      font-size: 24px;
+    }
+    
+    .nav-links {
+        top: 70px;
+        right: 0;
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .cart-container {
+        margin-right: 10px;
+    }
+    
+    .cart-count {
+        top: -10px;
+        right: -15px;
+    }
+    
+    .nav-item {
+        font-size: 20px;
+      /* width: 100%; */
+      padding: 12px;
+    }
+  }
+  
+  /* Smallest Screens */
+  @media (max-width: 480px) {
+
+    .logo a {
+      font-size: 18px;
+    }
+
+    .nav-links {
+      gap: 8px;
+    }
+
+    .navbar {
+      padding: 10px;
+    }
+    .nav-item {
+      font-size: 11px;
+      padding: 10px;
+    }
+  }
+  
