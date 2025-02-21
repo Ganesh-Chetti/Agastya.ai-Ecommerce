@@ -101,6 +101,7 @@ flex-direction: column;
     cursor: pointer;
     border-radius: 5px;
     font-size: 18px;
+    margin-top: 20px;
 }
 
 .checkout-btn:hover {

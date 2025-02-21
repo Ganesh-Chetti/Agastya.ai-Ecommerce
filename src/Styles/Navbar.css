@@ -17,6 +17,7 @@
     /* backdrop-filter: blur(100px); */
     /* background: #242424; */
     border-radius: 10px;
+    max-width: 100%;
     margin: 10px;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -100,14 +101,11 @@
     }
   
     .logo a {
-      font-size: 24px;
+      font-size: 20px;
     }
     
     .nav-links {
-        top: 70px;
         right: 0;
-        padding: 10px;
-        gap: 10px;
     }
     
     .cart-container {
@@ -121,7 +119,6 @@
     
     .nav-item {
         font-size: 20px;
-      /* width: 100%; */
       padding: 12px;
     }
   }
